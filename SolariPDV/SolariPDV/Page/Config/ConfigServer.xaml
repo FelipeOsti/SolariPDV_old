@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolariPDV.Page.Config.ConfigServer">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Image Source="https://www.solarinegocios.com.br/img/solariLogo.png" HeightRequest="250" WidthRequest="250"/>
+
+            <StackLayout Padding="10">
+                <Entry x:Name="entryUsuario" Placeholder="Usuário" Text="demo"/>
+                <Entry x:Name="entrySenha" Placeholder="Senha" IsPassword="True" Text="demo"/>
+            </StackLayout>
+            
+            <StackLayout Padding="10">
+                <Entry x:Name="sdsServidor" Placeholder="Informe o nome do servidor para conexão"/>
+                <Entry x:Name="nnrPorta" Placeholder="Informe a porta para conexão"/>
+            </StackLayout>
+            <Button x:Name="btConfirma" Text="Confirmar" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" BackgroundColor="#e0bd02" TextColor="White" Clicked="BtConfirma_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

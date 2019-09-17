@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolariPDV.Page.Pedido.FinalizaPedidoPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lstViewPedido"
+                      HasUnevenRows="True"
+                      IsGroupingEnabled="True"
+                      VerticalOptions="FillAndExpand"
+                      BackgroundColor="White"
+                      SeparatorVisibility="None">
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="10">
+                                <Label FontAttributes="Bold" FontSize="14" Text="{Binding DS_CLIENTE}" HorizontalOptions="FillAndExpand"/>
+                                <Label FontAttributes="Bold" FontSize="14" Text="Mesa: " HorizontalTextAlignment="End" WidthRequest="40"/>
+                                <Label FontAttributes="Bold" FontSize="14" Text="{Binding DS_MESA}" HorizontalTextAlignment="Start"/>
+                                <Label FontAttributes="Bold" FontSize="14" Text="{Binding DS_VLPEDIDO}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding DS_MATERIAL}" FontSize="14" HorizontalOptions="FillAndExpand"/>
+                                    <Label Text="{Binding DS_VLTOTAL}" FontSize="14" HorizontalOptions="EndAndExpand" WidthRequest="90"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Tamanho: " FontAttributes="Bold" FontSize="11"/>
+                                    <Label Text="{Binding DS_TAMANHO}" FontSize="10"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="btFinalizar" HorizontalOptions="FillAndExpand" VerticalOptions="End" Text="Enviar para Cozinha" TextColor="White" BackgroundColor="DarkOrange"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="SolariPDV.Page.Pedido.InicioPedido">
+    <StackLayout Padding="10" VerticalOptions="FillAndExpand" BackgroundColor="White">
+
+        <!--<Label Text="Seja Bem Vindo" FontSize="22" FontAttributes="Bold" TextColor="Gold"  HorizontalOptions="Center"/>-->
+
+        <forms:AnimationView 
+	        x:Name="animationView" 
+	        Animation="welcome.json" 
+	        Loop="True" 
+	        AutoPlay="True"
+	        HeightRequest="300"
+            WidthRequest="300"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="StartAndExpand"
+            Margin="0,20,0,0"/>
+
+        <Button Text="Faça seu pedido" Clicked="Button_Clicked" TextColor="White" BackgroundColor="Gold"  CornerRadius="10" VerticalOptions="EndAndExpand" Margin="0,0,0,-100"/>
+
+        <forms:AnimationView 
+	        x:Name="animationViewHand" 
+            OnClick="AnimationViewHand_OnClick"
+	        Animation="tap.json" 
+	        Loop="True" 
+	        AutoPlay="True"
+	        HeightRequest="200"
+            WidthRequest="200"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="EndAndExpand"
+            Margin="0,0,0,0"/>
+    </StackLayout>
+</ContentPage>

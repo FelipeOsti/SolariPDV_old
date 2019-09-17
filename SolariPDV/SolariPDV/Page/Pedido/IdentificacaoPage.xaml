@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Posso te conhecer melhor?"
+             x:Class="SolariPDV.Page.Pedido.IdentificacaoPage">
+    
+    <StackLayout Padding="10" BackgroundColor="White">
+        <Entry x:Name="sdsNome" Placeholder="Como posso te chamar?" PlaceholderColor="Gray"/>
+        <Entry x:Name="nnrTelefone" Placeholder="Pode me informar seu telefone?" PlaceholderColor="Gray" Keyboard="Telephone"/>
+        <Entry x:Name="nnrMesa" Placeholder="Informe o número da Mesa, caso esteja sentado em uma." PlaceholderColor="Gray" Keyboard="Numeric"/>
+
+        <Button x:Name="btIniciar" Text="Pronto... Iniciar Pedido" Clicked="BtIniciar_Clicked" BackgroundColor="Transparent" BorderWidth="1" BorderColor="#e0bd02" TextColor="#e0bd02" CornerRadius="15"/>
+    </StackLayout>
+    
+</ContentPage>

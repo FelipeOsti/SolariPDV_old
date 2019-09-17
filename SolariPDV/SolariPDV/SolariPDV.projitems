@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{1095C424-77DD-42E5-BA2D-9A3AC090D243}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SolariPDV</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\CaracLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\CardapioLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\EstoqueLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\FichaLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\LoginLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\WSRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CaracModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CardapioModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\EstoqueModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FichaModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ModeloDados.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PedidoModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\Pedido\CardapioPage.xaml.cs">
+      <DependentUpon>CardapioPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Page\Config\ConfigServer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Page\Estoque\EstoquePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Page\Menu\MenuPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Page\Pedido\AdicionarItemPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Page\Pedido\FinalizaPedidoPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Page\Pedido\IdentificacaoPage.xaml.cs">
+      <DependentUpon>IdentificacaoPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Page\Pedido\InicioPedido.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Service\IQrCodeScanningService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Page\Pedido\CardapioPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Page\Pedido\IdentificacaoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Page\Home\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Page\Config\ConfigServer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="C:\Users\Felipe Osti\source\repos\SolariPDV\SolariPDV\SolariPDV\Page\Config\ConfigServer.xaml.cs">
+      <DependentUpon>ConfigServer.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Felipe Osti\source\repos\SolariPDV\SolariPDV\SolariPDV\Page\Estoque\EstoquePage.xaml.cs">
+      <DependentUpon>EstoquePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Felipe Osti\source\repos\SolariPDV\SolariPDV\SolariPDV\Page\Menu\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Felipe Osti\source\repos\SolariPDV\SolariPDV\SolariPDV\Page\Menu\MenuPageDetail.xaml.cs">
+      <DependentUpon>MenuPageDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Felipe Osti\source\repos\SolariPDV\SolariPDV\SolariPDV\Page\Menu\MenuPageMaster.xaml.cs">
+      <DependentUpon>MenuPageMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Felipe Osti\source\repos\SolariPDV\SolariPDV\SolariPDV\Page\Pedido\InicioPedido.xaml.cs">
+      <DependentUpon>InicioPedido.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Felipe\source\repos\SolariPDV\SolariPDV\SolariPDV\Page\Pedido\AdicionarItem.xaml.cs">
+      <DependentUpon>AdicionarItemPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Felipe\source\repos\SolariPDV\SolariPDV\SolariPDV\Page\Pedido\FinalizaPedidoPage.xaml.cs">
+      <DependentUpon>FinalizaPedidoPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Page\Pedido\InicioPedido.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Page\Menu\MenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Page\Estoque\EstoquePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Page\Pedido\AdicionarItemPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Page\Pedido\FinalizaPedidoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
