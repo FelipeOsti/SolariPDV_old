@@ -104,6 +104,7 @@ namespace SolariPDV.Page.Pedido
 
                 lstViewCardapio.ItemsSource = LstCategoria;
                 IsBusy = false;
+
             }
             catch
             {
